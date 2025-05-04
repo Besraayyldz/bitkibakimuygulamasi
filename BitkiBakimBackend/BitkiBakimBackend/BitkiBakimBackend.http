@@ -1,0 +1,6 @@
+@BitkiBakimBackend_HostAddress = http://localhost:5143
+
+GET {{BitkiBakimBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
