@@ -1,6 +1,0 @@
-@BitkiBakimApi_HostAddress = http://localhost:5079
-
-GET {{BitkiBakimApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
