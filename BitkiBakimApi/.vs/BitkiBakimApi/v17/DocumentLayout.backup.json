@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|c:\\users\\ayyld\\source\\repos\\bitkibakimapi\\bitkibakimapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|solutionrelative:bitkibakimapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|c:\\users\\ayyld\\source\\repos\\bitkibakimapi\\bitkibakimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|solutionrelative:bitkibakimapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|c:\\users\\ayyld\\source\\repos\\bitkibakimapi\\bitkibakimapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|solutionrelative:bitkibakimapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|c:\\users\\ayyld\\source\\repos\\bitkibakimapi\\bitkibakimapi\\models\\bitki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|solutionrelative:bitkibakimapi\\models\\bitki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|c:\\users\\ayyld\\source\\repos\\bitkibakimapi\\bitkibakimapi\\bitkibakimapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{931F311E-726E-402A-95F4-5C6F983F9B78}|BitkiBakimApi\\BitkiBakimApi.csproj|solutionrelative:bitkibakimapi\\bitkibakimapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Program.cs",
+              "RelativeDocumentMoniker": "BitkiBakimApi\\Program.cs",
+              "ToolTip": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Program.cs*",
+              "RelativeToolTip": "BitkiBakimApi\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:49:09.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\appsettings.json",
+              "RelativeDocumentMoniker": "BitkiBakimApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\appsettings.json*",
+              "RelativeToolTip": "BitkiBakimApi\\appsettings.json*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-19T15:43:33.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BitkiBakimApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BitkiBakimApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:41:09.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bitki.cs",
+              "DocumentMoniker": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Models\\Bitki.cs",
+              "RelativeDocumentMoniker": "BitkiBakimApi\\Models\\Bitki.cs",
+              "ToolTip": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\Models\\Bitki.cs*",
+              "RelativeToolTip": "BitkiBakimApi\\Models\\Bitki.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:39:33.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BitkiBakimApi",
+              "DocumentMoniker": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\BitkiBakimApi.csproj",
+              "RelativeDocumentMoniker": "BitkiBakimApi\\BitkiBakimApi.csproj",
+              "ToolTip": "C:\\Users\\ayyld\\source\\repos\\BitkiBakimApi\\BitkiBakimApi\\BitkiBakimApi.csproj*",
+              "RelativeToolTip": "BitkiBakimApi\\BitkiBakimApi.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-19T15:38:22.547Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

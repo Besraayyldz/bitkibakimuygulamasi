@@ -1,1 +1,1 @@
-"# Bitki Bakçm Uygulamasç" 
+"# bitkibakimuygulamasi" 
