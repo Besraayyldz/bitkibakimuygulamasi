@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { register } from '../api'; // api.js içindeki register fonksiyonunu çağırıyoruz
+import { register } from '../api';
 
 export default function RegisterScreen({ navigation }) {
   const [username, setUsername] = useState('');
@@ -9,6 +9,11 @@ export default function RegisterScreen({ navigation }) {
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleRegister = async () => {
+    if (!username || !email || !password || !confirmPassword) {
+      Alert.alert('Hata', 'Lütfen tüm alanları doldurun.');
+      return;
+    }
+
     if (password !== confirmPassword) {
       Alert.alert('Hata', 'Şifreler uyuşmuyor.');
       return;
@@ -18,14 +23,14 @@ export default function RegisterScreen({ navigation }) {
       const result = await register(username, email, password);
 
       if (result.message && result.message.toLowerCase().includes('başarı')) {
-        Alert.alert('Başarılı', 'Kayıt tamamlandı!');
+        Alert.alert('Başarılı', result.message);
         navigation.navigate('Login');
       } else {
         Alert.alert('Hata', result.message || 'Kayıt başarısız.');
       }
     } catch (error) {
       console.error('Kayıt Hatası:', error);
-      Alert.alert('Hata', 'Sunucuya ulaşılamadı.');
+      Alert.alert('Hata', error.message || 'Sunucuya ulaşılamadı.');
     }
   };
 
@@ -45,6 +50,7 @@ export default function RegisterScreen({ navigation }) {
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
+        autoCapitalize="none"
       />
       <TextInput
         placeholder="Şifre"

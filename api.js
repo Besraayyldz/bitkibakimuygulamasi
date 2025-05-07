@@ -1,13 +1,13 @@
-const BASE_URL = 'http://10.57.105.1:7029/api/Auth';
+const BASE_URL = "http://172.20.10.3:5143/api/auth";
 
-export async function login(email, password) {
+export async function login(username, password) {
   try {
     const response = await fetch(`${BASE_URL}/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, password }),
     });
 
     return await response.json();

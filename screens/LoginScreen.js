@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { login } from '../api';
+import { login } from '../api'; // api.js içindeki login fonksiyonu
+
 
 export default function LoginScreen({ navigation }) {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     try {
-      const result = await login(email, password);
+      const result = await login(username, password);
 
       if (result.token) {
         console.log("Giriş başarılı:", result);
         Alert.alert("Başarılı", "Giriş yapıldı!");
-        // TODO: JWT token sakla veya yönlendir
+        navigation.navigate('Home'); // ← bu çalışmaz çünkü LoginScreen bile tanımlanmamış
+
       } else {
         Alert.alert("Hata", result.message || "Giriş başarısız!");
       }
@@ -29,11 +31,11 @@ export default function LoginScreen({ navigation }) {
       <Text style={styles.title}>Giriş Yap</Text>
 
       <TextInput
-        placeholder="Email"
+        placeholder="Kullanıcı Adı"
         style={styles.input}
-        keyboardType="email-address"
-        value={email}
-        onChangeText={setEmail}
+        value={username}
+        onChangeText={setUsername}
+        autoCapitalize="none"
       />
       <TextInput
         placeholder="Şifre"
