@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ayyld.bitkibakimuygulamasi"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +33,5 @@
         }
       ]
     ]
-
   }
 }

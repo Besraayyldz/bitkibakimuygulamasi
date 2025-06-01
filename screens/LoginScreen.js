@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { login } from '../api'; // api.js içindeki login fonksiyonu
-
+import { login as loginAPI } from '../api';
+import { useAuth } from '../components/AuthContext'; // useAuth'u doğru import et
 
 export default function LoginScreen({ navigation }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const { login } = useAuth(); // ✅
 
   const handleLogin = async () => {
     try {
-      const result = await login(username, password);
+      const result = await loginAPI(username, password);
 
       if (result.token) {
-        console.log("Giriş başarılı:", result);
+        login(result.token);
         Alert.alert("Başarılı", "Giriş yapıldı!");
-        navigation.navigate('Home'); // ← bu çalışmaz çünkü LoginScreen bile tanımlanmamış
-
       } else {
         Alert.alert("Hata", result.message || "Giriş başarısız!");
       }
