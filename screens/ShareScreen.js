@@ -8,7 +8,7 @@ const ShareScreen = () => {
 
   const createPost = async () => {
     try {
-      const response = await fetch('http://172.20.10.3:5000/api/posts', {
+      const response = await fetch('http://172.20.10.3:7029/api/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

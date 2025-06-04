@@ -6,7 +6,7 @@ import { useAuth } from '../components/AuthContext'; // useAuth'u doğru import 
 export default function LoginScreen({ navigation }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const { login } = useAuth(); // ✅
+  const { login } = useAuth(); // 
 
   const handleLogin = async () => {
     try {

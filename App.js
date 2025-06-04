@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './components/AuthContext';
 import RootNavigator from './navigation/RootNavigator';
 import UploadImageScreen from './screens/UploadImageScreen';
+import PlantDetailScreen from './screens/PlantDetailScreen';
 
 
 export default function App() {

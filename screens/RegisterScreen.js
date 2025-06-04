@@ -1,36 +1,25 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
-import { register } from '../api';
+import { register } from '../api'; // api.js'den register fonksiyonunu import et
 
 export default function RegisterScreen({ navigation }) {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleRegister = async () => {
-    if (!username || !email || !password || !confirmPassword) {
-      Alert.alert('Hata', 'Lütfen tüm alanları doldurun.');
-      return;
-    }
-
-    if (password !== confirmPassword) {
-      Alert.alert('Hata', 'Şifreler uyuşmuyor.');
-      return;
-    }
-
     try {
       const result = await register(username, email, password);
 
-      if (result.message && result.message.toLowerCase().includes('başarı')) {
-        Alert.alert('Başarılı', result.message);
-        navigation.navigate('Login');
+      if (result.success || result.token) { // Sunucunun cevabına göre kontrol et!
+        Alert.alert("Başarılı", "Kayıt işlemi başarılı! Giriş yapabilirsin.");
+        navigation.navigate('Login'); // Kullanıcıyı giriş ekranına yönlendir
       } else {
-        Alert.alert('Hata', result.message || 'Kayıt başarısız.');
+        Alert.alert("Hata", result.message || "Kayıt başarısız!");
       }
     } catch (error) {
-      console.error('Kayıt Hatası:', error);
-      Alert.alert('Hata', error.message || 'Sunucuya ulaşılamadı.');
+      console.error("Register error:", error);
+      Alert.alert("Hata", "Sunucuya bağlanılamadı.");
     }
   };
 
@@ -43,28 +32,22 @@ export default function RegisterScreen({ navigation }) {
         style={styles.input}
         value={username}
         onChangeText={setUsername}
+        autoCapitalize="none"
       />
       <TextInput
-        placeholder="Email"
+        placeholder="E-posta"
         style={styles.input}
         value={email}
         onChangeText={setEmail}
-        keyboardType="email-address"
         autoCapitalize="none"
+        keyboardType="email-address"
       />
       <TextInput
         placeholder="Şifre"
         style={styles.input}
+        secureTextEntry
         value={password}
         onChangeText={setPassword}
-        secureTextEntry
-      />
-      <TextInput
-        placeholder="Şifre (Tekrar)"
-        style={styles.input}
-        value={confirmPassword}
-        onChangeText={setConfirmPassword}
-        secureTextEntry
       />
 
       <Button title="Kayıt Ol" onPress={handleRegister} />

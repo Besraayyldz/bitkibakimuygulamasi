@@ -3,7 +3,7 @@ const BASE_URL = "http://172.20.10.3:7029/api"; // Backend IP ve port bilgisine 
 // ✅ Giriş (Login)
 export async function login(username, password) {
   try {
-    const response = await fetch(`${BASE_URL}/auth/login`, {
+    const response = await fetch(`${BASE_URL}/Auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -21,22 +21,18 @@ export async function login(username, password) {
 
 // ✅ Kayıt (Register)
 export async function register(username, email, password) {
-  try {
-    const response = await fetch(`${BASE_URL}/auth/register`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, email, password }),
-    });
+  const response = await fetch(`${BASE_URL}/Auth/register`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ username, email, password }),
+  });
 
-    if (!response.ok) throw new Error('Kayıt başarısız!');
-    return await response.json(); // { mesaj: ... }
-  } catch (error) {
-    console.error('Register error:', error.message);
-    throw error;
-  }
+  // Sunucu JSON dönecek, hata varsa burada patlayabilir
+  return await response.json();
 }
+
 
 // ✅ Fotoğraf Yükleme (Upload)
 export async function uploadImage(localUri) {

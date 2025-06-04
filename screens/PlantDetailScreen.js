@@ -7,7 +7,7 @@ export default function PlantDetailScreen({ route, navigation }) {
   const [plant, setPlant] = useState(null);
 
   // Sunucunun adresini buraya yaz (IP adresi olmalı)
-  const BASE_URL = 'http://192.168.1.5:5000/api/plant'; // örnek
+  const BASE_URL = 'http://172.20.10.3:7029/api/plant'; // örnek
 
   useEffect(() => {
     axios.get(`${BASE_URL}/${plantId}`)

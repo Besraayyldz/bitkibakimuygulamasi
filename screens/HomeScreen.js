@@ -13,7 +13,7 @@ export default function HomeScreen() {
   ];
 
   useEffect(() => {
-    fetch('http://172.20.10.3:5143/api/posts/feed') // Backend IP ve portunu kontrol et!
+    fetch('http://172.20.10.3:7029/api/posts/feed') // Backend IP ve portunu kontrol et!
       .then(res => res.json())
       .then(data => setPosts(data))
       .catch(err => console.error('Veri alınamadı:', err));
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    paddingTop: 50,
   },
   storiesContainer: {
     paddingVertical: 10,
